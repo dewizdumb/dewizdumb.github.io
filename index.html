@@ -1,48 +1,113 @@
-  <!DOCTYPE html>
-<html lang="en-us">
-<head>
-  <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
-</head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<body>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e2282f13bc.js"></script>
+    <title>WeatherPy DataViz Dashboard</title>
+  </head>
 
-  <h1>Your Name</h1>
+  <body>
+      <div class="navigation">
+          <nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgb(64, 16, 126)">
+            <a class="navbar-brand" style="color:rgb(255, 255, 255);" href="index.html">WeatherPy DataViz Dashboard</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="far fa-minus-square" style="color:rgb(255, 255, 255);"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" style="color:rgb(255, 255, 255)" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Plots
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="Visualization1.html">Max Temperature</a>
+                    <a class="dropdown-item" href="Visualization2.html">Humidity</a>
+                    <a class="dropdown-item" href="Visualization3.html">Cloudiness</a>
+                    <a class="dropdown-item" href="Visualization4.html">Wind Speed</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color:rgb(255, 255, 255)" href="comparisons.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color:rgb(255, 255, 255)" href="Data.html">Data</a>
+                </li>
+      
+              </ul>
+            </div>
+          </nav>
+        </div>
 
-  <img src="https://placehold.it/200x200" alt="Your Name">
+      <div class="jumbotron">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 ">
+                <div class="card card-custom">
+                  <div class="card-body">
+                    <h2 class="card-header text-center">
+                    Summary: Semi-Global Weather Analysis</h2>
+                    <p class="card-text"><iframe src="https://giphy.com/embed/hZSZS9HhbnRcI" frameBorder="0" class="giphy-embed" allowFullScreen style="width: 100%;"></iframe></p>
+                      <p>The WeatherPy Project analyzed the weather in over 500 cities across different latitudes on the same day.
+                        Basically, we took a snapshot of the day's weather across the globe by pulling data from the OpenWeatherMap
+                        API. Then we cleaned up the numbers and crunched them using pandas. We used the dataset to plot different 
+                        aspects of the weather across cities' latitudes. We specifically looked at how temperature, cloudiness, 
+                        wind speed, and humidity differed across the globe on that particular day. Using our data, we built a site
+                        that allowed the world to visualize the patterns nicely. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card card-custom">
+                  <div class="card-body">
+                    <h2 class="card-header"><i class="far fa-images fa-fw"></i> Visualisations</h2>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="hovereffect">
+                          <a href="Visualization1.html"><img src="Assets/images/Fig1.png" class=" img-thumbnail" alt="Latitude vs Temperature"><p class="card-text" align="center" style="color:black"><small>Latitude vs. Temperature</small></p></a>
+                        </div>
+                      </div>
+                      
+                      <div class="col-sm-6">
+                        <div class="hovereffect">
+                          <a href="Visualization3.html"><img src="Assets/images/Fig3.png" class="img-thumbnail" alt="Latitude vs cloudiness"><p class="card-text" align="center" style="color:black" ><small>Latitude vs. Cloudiness</small></p></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="hovereffect">
+                          <a href="Visualization2.html"><img src="Assets/images/Fig2.png" class="img-thumbnail" alt="Latitude vs Humidity"><p class="card-text" align="center" style="color:black"><small>Latitude vs. Humidity</small></p></a>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="hovereffect">
+                          <a href="Visualization4.html"><img src="Assets/images/Fig4.png" class=" img-thumbnail" alt="Latitude vs Wind Speed"><p class="card-text" align="center" style="color:black"><small>Latitude vs. Wind Speed</small></p></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
 
-  <p>Write a short paragraph about yourself or some placeholder text.</p>
-  <p>A second short paragraph about yourself or some placeholder text.</p>
-
-  <ul>
-    <li><strong>Email:</strong> <a href="#">someplace@gmail.com</a></li>
-    <li><strong>Github:</strong> <a href="#">coming soon!</a></li>
-    <li><strong>Twitter:</strong> <a href="#">not yet here</a></li>
-  </ul>
-
-  <table>
-    <tr>
-      <th>Books</th>
-      <th>Movies</th>
-      <th>Games</th>
-    </tr>
-    <tr>
-      <td>The Hobbit</td>
-      <td>Hot Fuzz</td>
-      <td>Dark Souls</td>
-    </tr>
-    <tr>
-      <td>The Name of the Wind</td>
-      <td>The Avengers</td>
-      <td>The Last of Us</td>
-    </tr>
-    <tr>
-      <td>The Girl With All the Gifts</td>
-      <td>The Matrix</td>
-      <td>Dragon Age: Origins</td>
-    </tr>
-  </table>
-
-</body>
-
+      <footer>
+          <p class="text text-center">&copy; M.R.Rao, 2019</p>
+      </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
